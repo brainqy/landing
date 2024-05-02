@@ -1,11 +1,42 @@
 <div class="container">
-    <div class="column">
+    <div class="columns">
         <div class="sub-text">
             Stay Tuned
         </div>
-        <div class="main-text">
+
+        <div class="main-text"  *ngIf="days > 0">
             We are launching soon.
         </div>
+        <div class="timer-container">
+            <div class="left-column">
+              <div class="row-70">
+                <p class="launch-day">
+                  <span>{{ launchDay }}</span> 
+                </p>
+              </div>
+              <div class="row-70">
+                <p class="launch-date">
+                  <span>{{ getLaunchDate() }}</span>
+                </p>
+              </div>
+              <div class="row-30">
+                <!-- Additional content for the bottom row -->
+              </div>
+            </div>
+            <div class="timer-card">
+              <p class="timer-text" *ngIf="days >= 0">
+                <span class="large-text">{{ days }}</span> days 
+                <span class="large-text">{{ hours }}</span> hours 
+                <span class="large-text">{{ minutes }}</span> minutes 
+                <span class="large-text">{{ seconds }}</span> seconds
+              </p>
+              <p class="launch-message" *ngIf="days < 0">Website Launched!</p>
+            </div>
+          </div>
+          
+          
+          
+          
       <!-- Your additional column content here -->
       <!-- For example, a logo or additional text -->
     </div>
@@ -14,7 +45,7 @@
       <form (ngSubmit)="subscribe()" class="subscription-form">
         <div class="subscribe-text">
             <h3>KEEP INFORMED</h3>
-            <p>Subscribe now. We will let you know as soon as we launch our new website.</p>
+            <h4>Subscribe now. We will let you know as soon as we launch our new website.</h4>
           </div>
         <div class="form-group">
           <label for="name">Enter Your Name</label>
