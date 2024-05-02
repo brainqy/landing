@@ -4,39 +4,40 @@
 
 .container {
   display: flex;
+  flex-direction: column; /* Stack columns vertically by default */
 }
 
-.column {
-  flex: 1;
+.columns {
   padding: 20px;
-}
-.columns{
-    flex: 1;
-    padding: 20px;
 }
 
 .sub-text {
   text-align: center;
   margin-bottom: 30px;
-  font-size: 24px;
+  font-size: 2rem; /* Adjust font size */
   font-family: 'Amatic SC', cursive; /* Apply Amatic SC font to sub-text */
 }
 
 .main-text {
   text-align: center;
   margin-bottom: 40px;
-  font-size: 44px;
+  font-size: 3rem; /* Adjust font size */
   font-family: 'Roboto', sans-serif; /* Apply Roboto font to main-text */
 }
 
 .subscribe-text {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 1.5rem; /* Adjust font size */
   font-family: 'Amatic SC', cursive; /* Apply Amatic SC font to subscribe-text */
 }
 
-.subscribe-text p {
-  margin: 0;
+.subscribe-text h3 {
+  font-size: 2rem; /* Adjust font size */
+}
+
+.subscribe-text h4 {
+  font-size: 1.2rem; /* Adjust font size */
 }
 
 .subscription-form {
@@ -78,67 +79,127 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
 .timer-container {
-    display: flex; /* Use flexbox for layout */
-    background-color: rgba(240, 240, 240, 0.3); /* Background color with transparency */
-    border-radius: 10px; /* Border radius to create rounded corners */
-    padding: 10px; /* Add padding to the card */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    margin-right: auto; /* Shift the container to the left */
-    margin-left: 100px;
+  display: flex; /* Use flexbox for layout */
+  background-color: rgba(240, 240, 240, 0.3); /* Background color with transparency */
+  border-radius: 10px; /* Border radius to create rounded corners */
+  padding: 10px; /* Add padding to the card */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  margin-right: auto; /* Shift the container to the left */
+  margin-left: 100px;
+}
 
+.timer-text {
+  white-space: nowrap; /* Prevent wrapping of text */
+}
+
+.timer-card {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack elements vertically */
+  /* Space elements evenly vertically */
+  width: 75%; /* 75% width for the right column */
+  display: inline-block;
+}
+
+.left-column {
+  width: 25%; /* 25% width for the left column */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.row-70,
+.row-30 {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+.launch-day,
+.launch-date {
+  margin: 0; /* Remove default margin */
+}
+
+.launch-day {
+  margin-bottom: 5px; /* Add a small margin between launch day and launch date */
+  font-size: 3rem; /* Adjust font size */
+}
+
+.timer-text {
+  font-size: 2rem; /* Adjust the font size as needed */
+}
+
+.large-text {
+  font-size: 3rem; /* Adjust the font size as needed */
+}
+
+.launch-message {
+  font-size: 3rem; /* Adjust font size */
+  font-weight: bold;
+  color: #00cc00; /* Green color */
+}
+
+/* Responsive layout */
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row; /* Change to horizontal layout on larger screens */
   }
-  .timer-text {
-    white-space: nowrap; /* Prevent wrapping of text */
+
+  .columns {
+    flex: 1; /* Use flex to distribute space evenly */
+    padding: 20px;
   }
+
+  .timer-container {
+    margin-left: 0; /* Remove left margin on larger screens */
+  }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 767px) {
+  .columns {
+    padding: 10px; /* Reduce padding for mobile screens */
+  }
+
+  .timer-container {
+    margin-left: auto; /* Center timer container horizontally on mobile screens */
+    margin-right: auto;
+    margin-bottom: 20px; /* Add some space between timer and form */
+  }
+
   .timer-card {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack elements vertically */
-    /* Space elements evenly vertically */
-    width: 75%; /* 75% width for the right column */
-    display: inline-block;
-    
+    width: 100%; /* Full width for timer card on mobile screens */
   }
-  
-  .left-column {
-    width: 25%; /* 25% width for the left column */
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack elements vertically */
-  }
-  
-  .row-70, .row-30 {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center content horizontally */
-  }
-  
-  .launch-day, .launch-date {
-    margin: 0; /* Remove default margin */
-  }
-  
-  
-  .launch-day {
-    margin-bottom: 5px; /* Add a small margin between launch day and launch date */
-    font-size: 48px;
-    
-  }
-  
-  
 
-  
-  .timer-text {
-    font-size: 28px; /* Adjust the font size as needed */
+  .left-column {
+    width: 100%; /* Full width for left column on mobile screens */
   }
-  
-  
-  .large-text {
-    font-size: 48px; /* Adjust the font size as needed */
+
+  .row-70,
+  .row-30 {
+    width: 100%; /* Full width for rows on mobile screens */
   }
-  
-   .launch-message {
-    font-size: 44px;
-    font-weight: bold;
-    color: #00cc00; /* Green color */
+
+  .subscribe-text h3 {
+    font-size: 1.8rem; /* Adjust font size */
   }
-  
-  
+
+  .subscribe-text h4 {
+    font-size: 1.1rem; /* Adjust font size */
+  }
+
+  .main-text,
+  .sub-text {
+    font-size: 1.8rem; /* Adjust font size */
+  }
+
+  .launch-day {
+    font-size: 2.5rem; /* Adjust font size */
+  }
+
+  .timer-text,
+  .large-text,
+  .launch-message {
+    font-size: 2rem; /* Adjust font size */
+  }
+}
