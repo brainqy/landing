@@ -1,0 +1,29 @@
+ 
+
+.landing-page {
+    background-image: url('../../../assets/imgs/dark.jpg'); /* Specify the path to your background image */
+    //background-color: rgb(173, 154, 251);
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Set the height to full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content {
+    text-align: center;
+    color: white; /* Set text color to white for better visibility on the background */
+  }
+  
+  .content p {
+    font-size: 24px; /* Example font size for the text */
+    margin-bottom: 20px;
+  }
+  .main-text {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 44px;
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font to main-text */
+  }
+  

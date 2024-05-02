@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="column">
+        <div class="sub-text">
+            Stay Tuned
+        </div>
+        <div class="main-text">
+            We are launching soon.
+        </div>
+      <!-- Your additional column content here -->
+      <!-- For example, a logo or additional text -->
+    </div>
+    <div class="column">
+      
+      <form (ngSubmit)="subscribe()" class="subscription-form">
+        <div class="subscribe-text">
+            <h3>KEEP INFORMED</h3>
+            <p>Subscribe now. We will let you know as soon as we launch our new website.</p>
+          </div>
+        <div class="form-group">
+          <label for="name">Enter Your Name</label>
+          <input type="text" class="form-control" id="name" [(ngModel)]="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Enter Your Email</label>
+          <input type="email" class="form-control" id="email" [(ngModel)]="email" name="email" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Subscribe Now</button>
+      </form>
+    </div>
+  </div>
+  
