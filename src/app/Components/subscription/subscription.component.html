@@ -4,59 +4,52 @@
             Stay Tuned
         </div>
 
-        <div class="main-text"  *ngIf="days > 0">
+        <div class="main-text" *ngIf="days > 0">
             We are launching soon.
         </div>
         <div class="timer-container">
             <div class="left-column">
-              <div class="row-70">
-                <p class="launch-day">
-                  <span>{{ launchDay }}</span> 
-                </p>
-              </div>
-              <div class="row-70">
-                <p class="launch-date">
-                  <span>{{ getLaunchDate() }}</span>
-                </p>
-              </div>
-              <div class="row-30">
-                <!-- Additional content for the bottom row -->
-              </div>
+                <div class="row-70">
+                    <p class="launch-day">
+                        <span>{{ launchDay }}</span>
+                    </p>
+                </div>
+                <div class="row-70">
+                    <p class="launch-date">
+                        <span>{{ getLaunchDate() }}</span>
+                    </p>
+                </div>
+                <div class="row-30">
+                    <!-- Additional content for the bottom row -->
+                </div>
             </div>
             <div class="timer-card">
-              <p class="timer-text" *ngIf="days >= 0">
-                <span class="large-text">{{ days }}</span> days 
-                <span class="large-text">{{ hours }}</span> hrs 
-                <span class="large-text">{{ minutes }}</span> mins 
-                <span class="large-text">{{ seconds }}</span> secs
-              </p>
-              <p class="launch-message" *ngIf="days < 0">Website Launched!</p>
+                <p class="timer-text" *ngIf="days >= 0">
+                    <span class="large-text">{{ days }}</span> days
+                    <span class="large-text">{{ hours }}</span> hrs
+                    <span class="large-text">{{ minutes }}</span> mins
+                    <span class="large-text">{{ seconds }}</span> secs
+                </p>
+                <p class="launch-message" *ngIf="days < 0">Website Launched!</p>
             </div>
-          </div>
-          
-          
-          
-          
-      <!-- Your additional column content here -->
-      <!-- For example, a logo or additional text -->
+        </div>
     </div>
     <div class="column">
-      
-      <form (ngSubmit)="subscribe()" class="subscription-form">
-        <div class="subscribe-text">
-            <h3>KEEP INFORMED</h3>
-            <h4>Subscribe now. We will let you know as soon as we launch our new website.</h4>
-          </div>
-        <div class="form-group">
-          <label for="name">Enter Your Name</label>
-          <input type="text" class="form-control" id="name" [(ngModel)]="name" name="name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Enter Your Email</label>
-          <input type="email" class="form-control" id="email" [(ngModel)]="email" name="email" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Subscribe Now</button>
-      </form>
+
+        <form (ngSubmit)="subscribe()" class="subscription-form">
+            <div class="subscribe-text">
+                <h3>KEEP INFORMED</h3>
+                <h4>Subscribe now. We will let you know as soon as we launch our new website.</h4>
+            </div>
+            <div class="form-group">
+                <label for="name">Enter Your Name</label>
+                <input type="text" class="form-control" id="name" [(ngModel)]="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Enter Your Email</label>
+                <input type="email" class="form-control" id="email" [(ngModel)]="email" name="email" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Subscribe Now</button>
+        </form>
     </div>
-  </div>
-  
+</div>

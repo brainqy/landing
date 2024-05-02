@@ -203,3 +203,208 @@ button:hover {
     font-size: 2rem; /* Adjust font size */
   }
 }
+/* Tablet styles */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+      flex-direction: column; /* Switch back to vertical layout for tablets */
+    }
+  
+    .columns {
+      padding: 20px; /* Restore padding */
+    }
+  
+    .timer-container {
+      margin-left: auto; /* Center timer container */
+      margin-right: auto;
+    }
+  }
+  
+  /* Landscape tablet styles */
+  @media screen and (min-width: 1024px) and (max-width: 1199px) {
+    .container {
+      flex-direction: row; /* Switch to horizontal layout for landscape tablets */
+    }
+  
+    .columns {
+      flex: 1; /* Use flex to distribute space evenly */
+      padding: 20px;
+    }
+  
+    .timer-container {
+      margin-left: 0; /* Remove left margin */
+    }
+  }
+  
+  /* Mobile styles */
+  @media screen and (max-width: 767px) {
+    .container {
+      flex-direction: column; /* Stack columns vertically on mobile screens */
+    }
+  
+    .columns {
+      padding: 10px; /* Reduce padding for mobile screens */
+    }
+  
+    .timer-container {
+      margin-left: auto; /* Center timer container horizontally */
+      margin-right: auto;
+      margin-bottom: 20px; /* Add some space between timer and form */
+    }
+  
+    .timer-card {
+      width: 100%; /* Full width for timer card on mobile screens */
+    }
+  
+    .left-column {
+      width: 100%; /* Full width for left column on mobile screens */
+    }
+  
+    .row-70,
+    .row-30 {
+      width: 100%; /* Full width for rows on mobile screens */
+    }
+  
+    .subscribe-text h3 {
+      font-size: 1.8rem; /* Adjust font size */
+    }
+  
+    .subscribe-text h4 {
+      font-size: 1.1rem; /* Adjust font size */
+    }
+  
+    .main-text,
+    .sub-text {
+      font-size: 1.8rem; /* Adjust font size */
+    }
+  
+    .launch-day {
+      font-size: 2.5rem; /* Adjust font size */
+    }
+  
+    .timer-text,
+    .large-text,
+    .launch-message {
+      font-size: 2rem; /* Adjust font size */
+    }
+  }
+  /* Small screens (portrait phones) */
+@media screen and (max-width: 479px) {
+    .container {
+      flex-direction: column; /* Stack columns vertically on small screens */
+    }
+  
+    .columns {
+      padding: 10px; /* Reduce padding for small screens */
+    }
+  
+    .timer-container {
+      margin-left: auto; /* Center timer container horizontally */
+      margin-right: auto;
+      margin-bottom: 20px; /* Add some space between timer and form */
+    }
+  
+    .timer-card {
+      width: 100%; /* Full width for timer card on small screens */
+    }
+  
+    .left-column {
+      width: 100%; /* Full width for left column on small screens */
+    }
+  
+    .row-70,
+    .row-30 {
+      width: 100%; /* Full width for rows on small screens */
+    }
+  
+    .subscribe-text h3 {
+      font-size: 1.6rem; /* Adjust font size */
+    }
+  
+    .subscribe-text h4 {
+      font-size: 1rem; /* Adjust font size */
+    }
+  
+    .main-text,
+    .sub-text {
+      font-size: 1.6rem; /* Adjust font size */
+    }
+  
+    .launch-day {
+      font-size: 2rem; /* Adjust font size */
+    }
+  
+    .timer-text,
+    .large-text,
+    .launch-message {
+      font-size: 1.6rem; /* Adjust font size */
+    }
+  }
+  /* Very small screens */
+@media screen and (max-width: 330px) {
+    .container {
+      flex-direction: column; /* Stack columns vertically on very small screens */
+    }
+  
+    .columns {
+      padding: 5px; /* Further reduce padding for very small screens */
+    }
+  
+    .timer-container {
+      margin-left: auto; /* Center timer container horizontally */
+      margin-right: auto;
+      margin-bottom: 15px; /* Reduce margin between timer and form */
+    }
+  
+    .timer-card {
+      width: 100%; /* Full width for timer card on very small screens */
+    }
+  
+    .left-column {
+      width: 100%; /* Full width for left column on very small screens */
+    }
+  
+    .row-70,
+    .row-30 {
+      width: 100%; /* Full width for rows on very small screens */
+    }
+  
+    .subscribe-text h3 {
+      font-size: 1.4rem; /* Further adjust font size */
+    }
+  
+    .subscribe-text h4 {
+      font-size: 0.9rem; /* Further adjust font size */
+    }
+  
+    .main-text,
+    .sub-text {
+      font-size: 1.4rem; /* Further adjust font size */
+    }
+  
+    .launch-day {
+      font-size: 1.8rem; /* Further adjust font size */
+    }
+  
+    .timer-text,
+    .large-text,
+    .launch-message {
+      font-size: 1.4rem; /* Further adjust font size */
+    }
+    input[type="text"],
+  input[type="email"] {
+    width: calc(100% - 24px); /* Adjust width of input fields */
+    padding: 8px; /* Adjust padding of input fields */
+  }
+  /* Add this style for launch day */
+.launch-day {
+    font-size: 1.8rem; /* Adjust font size */
+    margin-bottom: 5px; /* Add a small margin between launch day and launch date */
+  }
+  
+  .launch-day span {
+    font-weight: bold;
+    margin-left: 5px; /* Add some spacing between "Launch Day:" and the day */
+  }
+  
+  }
+  
