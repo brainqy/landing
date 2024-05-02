@@ -81,14 +81,16 @@ button:hover {
 }
 
 .timer-container {
-  display: flex; /* Use flexbox for layout */
-  background-color: rgba(240, 240, 240, 0.3); /* Background color with transparency */
-  border-radius: 10px; /* Border radius to create rounded corners */
-  padding: 10px; /* Add padding to the card */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  margin-right: auto; /* Shift the container to the left */
-  margin-left: 100px;
-}
+    display: flex;
+    background-color: rgba(240, 240, 240, 0.3);
+    border-radius: 10px;
+    padding: 2%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: auto;
+    margin-left: 10%;
+    width: 90%; /* Adjust the width to 90% */
+    display: inline-block;
+  }
 
 .timer-text {
   white-space: nowrap; /* Prevent wrapping of text */
@@ -99,7 +101,7 @@ button:hover {
   flex-direction: column; /* Stack elements vertically */
   /* Space elements evenly vertically */
   width: 75%; /* 75% width for the right column */
-  display: inline-block;
+  
 }
 
 .left-column {
@@ -130,7 +132,7 @@ button:hover {
 }
 
 .large-text {
-  font-size: 3rem; /* Adjust the font size as needed */
+  font-size: 2rem; /* Adjust the font size as needed */
 }
 
 .launch-message {
@@ -200,7 +202,7 @@ button:hover {
   .timer-text,
   .large-text,
   .launch-message {
-    font-size: 2rem; /* Adjust font size */
+    font-size: 1.5rem; /* Adjust font size */
   }
 }
 /* Tablet styles */
@@ -284,7 +286,7 @@ button:hover {
     .timer-text,
     .large-text,
     .launch-message {
-      font-size: 2rem; /* Adjust font size */
+      font-size: 1.5rem; /* Adjust font size */
     }
   }
   /* Small screens (portrait phones) */
@@ -336,7 +338,7 @@ button:hover {
     .timer-text,
     .large-text,
     .launch-message {
-      font-size: 1.6rem; /* Adjust font size */
+      font-size: 1.3rem; /* Adjust font size */
     }
   }
   /* Very small screens */
@@ -388,7 +390,7 @@ button:hover {
     .timer-text,
     .large-text,
     .launch-message {
-      font-size: 1.4rem; /* Further adjust font size */
+      font-size: 1.1rem; /* Further adjust font size */
     }
     input[type="text"],
   input[type="email"] {
